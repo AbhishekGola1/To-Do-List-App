@@ -22,4 +22,15 @@ function addTask() {
 }
 
 
-// adding click function for checked and removing
+// adding click function for checked and removing task
+
+listContainer.addEventListener("click", (e) => {
+
+    if(e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+    }
+    else if(e.target.tagName === "SPAN") {
+        e.target.parentElement.remove();
+    }
+
+});
