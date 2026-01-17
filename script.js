@@ -45,6 +45,8 @@ function saveData() {
     localStorage.setItem("data", listContainer.innerHTML);
 }
 
+// creating show data function for showing data from local storage
+
 function showData() {
     listContainer.innerHTML = localStorage.getItem("data");
 }
